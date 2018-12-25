@@ -272,9 +272,6 @@ to b responsive*/
   }
 } */
 
-
-
-
 /*the 2 column before d footer*/
 .article-content{
   margin: 20px auto;
@@ -326,10 +323,13 @@ to b responsive*/
   margin-left:0 auto;
   padding: 20px;
   background-color: darkgrey;
+  /* text-align: justify; */
 }
 
 /*footer services/ support*/
   .footer1{
+    max-width: 40px;
+    /* margin: 20px auto; */
   margin: 20px 20px 20px 40px;
   float: left;
   padding: 5px;
@@ -338,14 +338,24 @@ to b responsive*/
 .foosup{
    float: left;
    margin: 20px 20px 20px 40px;
+   /* margin: 20px auto; */
    padding: 5px;
 }
 
 .foolife{
   padding: 5px;
+  /* margin: 20px auto; */
   margin: 20px;
   float: left;
 }
+
+/* footer content services and so onshinking */
+.footercontent{
+  max-width: 50px;
+  margin: 20px auto;
+}
+
+
 
 h5, p{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -355,7 +365,7 @@ h5, p{
 
 /*newsletter page*/
 .fooform{
-  text-align: justify;
+  /* text-align: justify; */
   margin: 5px;
   padding: 5px;
   float: left;
@@ -400,7 +410,7 @@ form{
   form div + div{
     margin-top: 0.5em;
   }
-
+/* SIGNUP BUTTON */
   .btn-signup{
     margin: 10px 10px 0 150px;
     border-radius: 5px;
@@ -409,46 +419,49 @@ form{
     background-color: rgb(190, 76, 34); 
     text-align: center;
   }
+/* hovering o the button */
+  .btn-signup:hover{
+    background-color: burlywood;
+    transition-duration: 0.5s;
+  }
 
 
-  
   /* this is the address bar design */
   .fooadd{
     text-align: center;
-    /* margin-left: 50px; */
+    margin-top: 10px;
     background-color: grey;
-    max-height: auto;
+    height: 150px;
     max-width: auto;
     border-radius: 5px;
+    padding: 20px;
   
   }
  .fooadd + address, p {
   color: beige;
-  text-align: center;
+  text-align: justify;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
   padding: 5px;
-  margin: 2px;
+  margin-top: 10px; 
 
 }
   /*  */
-{
-  color: gainsboro;
-}
 
-
-address{
+address {
   color:gainsboro;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 10px;
   font-weight: 50px;
-  line-height: 20px;
-  
+  /* line-height: 20px; */
 }
 
 
 /* styling the address text */
+.p{
+  text-align: center;
 
+}
 
 /* hover on the icons */
 .fa {
@@ -465,9 +478,55 @@ a{
  font-weight: bolder;
 }
 
+/* SOCIAL MEDIA LINK */
+.sm{
+  background-color: rgb(216, 184, 161);
+  /* margin-left: 10px; */
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 2px;
+  width: 20px;
+}
 
-
-
-
-
+/* SOCIAL MEDIA RESPONSIVENESS */
+@media(min-width:300px){
   
+}
+
+
+
+
+/* social media hovering */
+.sm .fa-facebook:hover{
+  color: cornflowerblue;
+  transition-duration: 1s;
+}
+
+.sm .fa-twitter:hover{
+  color: deepskyblue;
+  transition-duration: 1s;
+}
+
+.sm .fa-instagram:hover{
+  color: rgba(240, 20, 229, 0.459);
+  transition-duration: 1s;
+}
+
+
+
+
+
+/* LOGIN FORM PAGE */
+.login-page{
+  background-color: #79541952;
+  color:coral;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px black;
+  width: 50%;
+  }
+
+input{
+  background-color: grey;
+
+}
