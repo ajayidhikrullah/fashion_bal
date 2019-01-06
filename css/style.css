@@ -517,16 +517,81 @@ a{
 
 
 
-/* LOGIN FORM PAGE */
-.login-page{
+/* SIGNUP FORM PAGE */
+/* this will resizze from 588px */
+@media (max-width: 588px){
+  /* get the input field and adjust it to b responsive */
+  .inp_fid{
+    width: 100%;
+    font-size: 1em;
+    /* height: 30px; */
+    /* float: left; */
+  }
+
+  input[type= submit]{
+    width: 100%;
+  }
+}
+
+
+.signup-page{
   background-color: #79541952;
   color:coral;
   margin: 0 auto;
   box-shadow: 5px 5px 5px black;
   width: 50%;
-  }
-
-input{
-  background-color: grey;
-
+  /* box-sizing: border-box; */
+  border-radius: 5px;
+  padding: 5px;
 }
+
+#form-content{
+  margin-left: 10%;
+}
+
+/* targeting the submut button on signup page n laptop responsiveness */
+input[type=submit]{
+  background-color: rgb(224, 172, 103);
+  color: #fff;
+  font-size: 1em;
+  margin: 10px 0 0 10px;
+  /* width: 50%; */
+  position: relative;
+  left: 30%;
+}
+.inp_fid[type=submit]{
+  width: 30%;
+}
+
+/* SOCIAL MEDIA LINK */
+.sm {
+  background-color: rgb(216, 184, 161);
+  /* margin-left: 10px; */
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 2px;
+  width: 20px;
+}
+
+/* Signup page social media hovering */
+
+.sm .fa-facebook:hover{
+  color: cornflowerblue;
+  transition-duration: 1s;
+}
+
+.sm .fa-twitter:hover{
+  color: deepskyblue;
+  transition-duration: 1s;
+}
+
+.sm .fa-instagram:hover{
+  color: rgba(240, 20, 229, 0.459);
+  transition-duration: 1s;
+}
+
+
+
+
+

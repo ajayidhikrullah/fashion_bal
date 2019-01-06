@@ -25,8 +25,7 @@
     <!-- <script src="main.js"></script> -->
     <link rel="stylesheet" href="css/style.css">
     <script src=""></script>
-    
-    
+       
 </head>
 
 <body>
@@ -41,40 +40,37 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Log In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
             </ul>
         </nav>
 
 
-        <div class="login-page">
+        <div class="signup-page">
             <form action="">
-                <div>
-                    <label for="name">First Name:</label>
-                        <input type="text" id="name" required placeholder="type in your firstname">
-                </div>
-                <div>
-                    <label for="lname">Last Name:</label>
-                    <input type="text" name="lname" id="lname" required placeholder="your surname">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="your mail" required>
-                </div>
+                <div id="form-content">
+                    <div class="text-input">
+                        <label for="name">First Name:</label>
+                            <input type="text" class="inp_fid" id="name" required placeholder="type in your firstname">
+                    </div>
+                    <div class="text-input">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" class="inp_fid" name="lname" id="lname" required placeholder="your surname">
+                    </div>
+                    <div class="text-input">
+                        <label for="email">Email:</label>
+                        <input type="email" class="inp_fid" name="email" id="email" required placeholder="your mail" >
+                    </div>
 
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" name="password"  id="password" required placeholder="your password">
+                    <div class="text-input">
+                        <label for="password">Password</label>
+                        <input type="password" class="inp_fid" name="password"  id="password" required placeholder="your password">
+                    </div>
                 </div>
+                <input type="submit" value="Sign Up" class="inp_fid" name="submit">
 
-                <button type="submit" class="btn-signup">Login</button>
+                <!-- <button type="submit" class="btn-signup">Sign Up</button> -->
             </form>
         </div>
-
-
-
-        <h1>SITE UNDER CONSTRUCTION, PLEASE VISIT BACK</h1>
-
-
 
 
 
