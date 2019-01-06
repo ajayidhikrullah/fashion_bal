@@ -49,6 +49,110 @@ setting the media query for minwidth (231px)
   }
 }
 
+/* ________________NEW HEADER STYLE JUST ADDE___________ */
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+header{
+	padding: 10px;
+	/*margin:10px;*/
+	background-color:#000;
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+}
+
+.main-header{
+	background-color: grey;
+	max-width:50px;
+	margin: 10px;
+	padding: 10px;
+	/*display: inline-block;*/
+	float: left;
+}
+
+/*.clear{
+	clear: both;
+}
+*/
+.main-nav{
+	/*background-color: brown;*/
+	/*display: inline;*/
+	float: right;
+	margin-right: 150px;
+	padding: 10px;
+}
+
+.main-nav .searchbar{
+	float: right;
+	margin-left:10px;
+  /*padding: 5px;*/
+  background-color: white;  
+}
+
+.main-nav ul li{
+  display: inline;
+  background-color:#fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  
+}
+
+@media(max-width: 400px){
+	.main-nav ul li {
+		float: left;
+	}
+	.main-header {
+		float: left;
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* __________________________________________
+    END OF THE NEW FIXED HEADER
+ ___________________________________________ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*___________________________________
@@ -56,53 +160,53 @@ setting the media query for minwidth (231px)
   _____________________________________
 */
 
-span.logo-name{
+/* span.logo-name{
   font-style: normal;
   color: rgb(179, 136, 28);
   font-size: 30px;
   font-weight: bold;
   font-family: 'Trebuchet MS', 'Lobster', cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding: 10px;
-}
+} */
 
 /*--------------------
  [to Hover on the logoname]
   ----------------------*/
-span.logo-name:hover{
+/* span.logo-name:hover{
   color: darkorange;
   border: 1px solid;
- }
+ } */
 
- a {                      
-text-decoration: none; }/*---this was done to clear d default 'underline'---*/
+ /* a {                      
+text-decoration: none; }---this was done to clear d default 'underline'--- */
 
 /*|getting started withthe NavBar|*/
-ul.main-nav-menu {
+/* ul.main-nav-menu {
   padding: 0;
   margin: 0;
-}
+} */
 
 /*setup d nav backgroundcolor/padding/margin
 to rythme with d greycolor*/
-nav{
+/* nav{
   background-color: chocolate;
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
   /* border: 2px solid coral; border-radius: 3px; */
-}
+} */
 
 /*setup d links to b inline asin intoto*/
-ul.main-nav-menu li {
+/* ul.main-nav-menu li {
   display: inline;
-}
+} */
 
 /*[to give d links its own
 separate color gangan] - also
 added media query to d nav to b block
 level at some point
 */
-ul.main-nav-menu li a {
+/* ul.main-nav-menu li a {
   background-color: honeydew;
   padding: 5px;
   margin-right: 10px;
@@ -118,13 +222,13 @@ ul.main-nav-menu li a {
   background-color: aqua;
   font-weight: bold;
 
-}
+} */
 
 /*- also
 added media query to d nav to b block
 level at some point
 */
-@media (max-width: 240px){
+/* @media (max-width: 240px){
   ul.main-nav-menu li a {
     display: block;
     background-color: honeydew;
@@ -136,7 +240,7 @@ level at some point
     text-decoration: none;
     text-align: center;
   }
-}
+} */
 
 /*section aspect 
 uplod bg img, min-height so d picx and d 
@@ -158,6 +262,7 @@ set to d middle*/
   font-size: 3.125em;
   color: chocolate;
   text-shadow: 10px 20px 10px rgb(124, 103, 56);
+  margin-top: 0;
 }
 
 .banner-head-name{
@@ -519,7 +624,7 @@ a{
 
 /* SIGNUP FORM PAGE */
 /* this will resizze from 588px */
-@media (max-width: 588px){
+@media (max-width: 500px){
   /* get the input field and adjust it to b responsive */
   .inp_fid{
     width: 100%;
@@ -539,8 +644,8 @@ a{
   color:coral;
   margin: 0 auto;
   box-shadow: 5px 5px 5px black;
-  width: 50%;
-  /* box-sizing: border-box; */
+  width: 70%; 
+  box-sizing: border-box;
   border-radius: 5px;
   padding: 5px;
 }
@@ -557,10 +662,10 @@ input[type=submit]{
   margin: 10px 0 0 10px;
   /* width: 50%; */
   position: relative;
-  left: 30%;
+  left:40%;
 }
 .inp_fid[type=submit]{
-  width: 30%;
+  width: 50%;
 }
 
 /* SOCIAL MEDIA LINK */
